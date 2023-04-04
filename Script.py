@@ -212,7 +212,7 @@ Message <b>: {}</b>"""
     CAPTION = """
 📂 <em>File Name</em>: <code>{file_name}</code> /n/n
 
-<b>ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴍᴇ</b>
+<em><b>ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴍᴇ</b><em>
  """
 
     IMDB_TEMPLATE_TXT = """
