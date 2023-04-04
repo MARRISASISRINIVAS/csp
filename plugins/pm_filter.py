@@ -911,18 +911,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "3cse":
         buttons = [[
-                    InlineKeyboardButton('Natural language processing', callback_data="owner_info"),
+                    InlineKeyboardButton('Natural language processing', callback_data="deeplearning"),
                     InlineKeyboardButton('Computer networks ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
-                    InlineKeyboardButton('Formal language automata', callback_data='help'),
-                    InlineKeyboardButton('Robotics', callback_data='about')
+                    InlineKeyboardButton('Formal language automata', callback_data='deeplearning'),
+                    InlineKeyboardButton('Robotics', callback_data='deeplearning')
                 ],
             [
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
-                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Complier design', callback_data='deeplearning')
                    
                 ],[
-                    InlineKeyboardButton('Pattern and anomaly detection', callback_data='help'),
+                    InlineKeyboardButton('Pattern and anomaly detection', callback_data='deeplearning'),
                     InlineKeyboardButton('Back', callback_data='yearcse')
                 ]]
         await client.edit_message_media(
@@ -939,14 +939,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "deeplearning":
         buttons = [[
-                    InlineKeyboardButton('Unit 1', callback_data="owner_info"),
-                    InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Unit 1', callback_data="deeplearning"),
+                    InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORTCHAT}")
                 ],[
-                    InlineKeyboardButton('Unit 3', callback_data='help'),
-                    InlineKeyboardButton('Unit 4', callback_data='about')
+                    InlineKeyboardButton('Unit 3', callback_data='deeplearning'),
+                    InlineKeyboardButton('Unit 4', callback_data='deeplearning')
                 ],[
-                    InlineKeyboardButton('Unit 5', callback_data="owner_info"),
-                    InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Unit 5', callback_data="deeplearning"),
+                    InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORTCHAT}")
                
                 ],[
                     
