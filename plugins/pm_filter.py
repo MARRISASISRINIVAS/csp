@@ -841,7 +841,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('cse', callback_data="yearcse"),
+                    InlineKeyboardButton('cse', callback_data='yearcse'),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
@@ -885,13 +885,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         
     elif query.data == "yearcse":
-        buttons = [
+        buttons = [[
                     InlineKeyboardButton('1', callback_data="owner_info"),
                     InlineKeyboardButton('2', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('3', callback_data='3cse'),
                     InlineKeyboardButton('4', callback_data='about'),
-                ],
+                ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -903,8 +903,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        
     elif query.data == "3cse":
-        buttons = [
+        buttons = [[
                     InlineKeyboardButton('Natural language processing', callback_data="owner_info"),
                     InlineKeyboardButton('Computer networks ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
@@ -914,7 +915,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
                     InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}")
                     InlineKeyboardButton('Pattern and anomaly detection ', url=f"https://t.me/{SUPPORT_CHAT}")
-                ]
+                ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -926,8 +927,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        
     elif query.data == "deeplearning":
-        buttons = [
+        buttons = [[
                     InlineKeyboardButton('Unit 1', callback_data="owner_info"),
                     InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
@@ -936,8 +938,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('Unit 5', callback_data="owner_info"),
                     InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORT_CHAT}")
-                    
-                ]
+               
+                ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
