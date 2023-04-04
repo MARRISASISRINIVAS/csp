@@ -841,7 +841,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('🛡 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
+                    InlineKeyboardButton('cse', callback_data="yearcse"),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
@@ -883,6 +883,72 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        
+    elif query.data == "yearcse":
+        buttons = [
+                    InlineKeyboardButton('1', callback_data="owner_info"),
+                    InlineKeyboardButton('2', url=f"https://t.me/{SUPPORT_CHAT}")
+                ],[
+                    InlineKeyboardButton('3', callback_data='3cse'),
+                    InlineKeyboardButton('4', callback_data='about'),
+                ],
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YEAR_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "3cse":
+        buttons = [
+                    InlineKeyboardButton('Natural language processing', callback_data="owner_info"),
+                    InlineKeyboardButton('Computer networks ', url=f"https://t.me/{SUPPORT_CHAT}")
+                ],[
+                    InlineKeyboardButton('Formal language automata', callback_data='help'),
+                    InlineKeyboardButton('Robotics', callback_data='about'),
+                ],[
+                    InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
+                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Pattern and anomaly detection ', url=f"https://t.me/{SUPPORT_CHAT}")
+                ]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.COURSE_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "deeplearning":
+        buttons = [
+                    InlineKeyboardButton('Unit 1', callback_data="owner_info"),
+                    InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORT_CHAT}")
+                ],[
+                    InlineKeyboardButton('Unit 3', callback_data='help'),
+                    InlineKeyboardButton('Unit 4', callback_data='about'),
+                ],[
+                    InlineKeyboardButton('Unit 5', callback_data="owner_info"),
+                    InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORT_CHAT}")
+                    
+                ]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YEAR_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
 
     elif query.data == "global_filters":
         buttons = [[
