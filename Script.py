@@ -210,7 +210,7 @@ Name <b>: {}</b>
 Message <b>: {}</b>"""
 
     CAPTION = """
-📂 <em>File Name</em>: <code>{file_name}</code> 
+📂 <em>File Name</em>: <code>{file_name}</code> /n/n
 
 <b>ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴍᴇ</b>
  """
