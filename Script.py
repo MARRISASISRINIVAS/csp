@@ -1,5 +1,14 @@
 class script(object):
-    START_TXT = """Hilo {} 💖
+
+START_TXT = """ ʜɪ 👋
+ᴛʜɪs ʙᴏᴛ ᴜɴ ᴏғғɪᴄɪᴀʟ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴛʜᴇ sᴛᴜᴅᴇɴᴛs ᴏғ ᴋᴀʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛʙᴏᴏᴋs ᴀɴᴅ ᴘʀᴇᴠɪᴏᴜs ǫᴜᴀᴛɪᴏɴ ᴘᴀᴘᴇʀs
+ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʙʀᴀɴᴄʜ 👇 """
+    YEAR_TXT = """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʏᴇᴀʀ 👇 """
+    COURSE_TXT = """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴄᴏᴜʀsᴇ 👇"""
+    BRANCH_TXT= """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʙʀᴀɴᴄʜ  👇"""
+    
+    
+    START_TT = """Hilo {} 💖
 
 <b><u>𝖨'𝗆 𝖯𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝖠𝗎𝗍𝗈-𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖴𝗌𝖾 𝖬𝖾 𝖠𝗌 𝖠 𝖠𝗎𝗍𝗈-𝖿𝗂𝗅𝗍𝖾𝗋 𝗂𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉</u></b>
 
@@ -203,10 +212,7 @@ Message <b>: {}</b>"""
     CAPTION = """
 📂 <em>File Name</em>: <code>{file_name}</code> 
 
-🖇 <em>File Size</em>: <code>{file_size}</code> 
-
-❤️‍🔥 </i>Join</i> [vcbmoviez](https://t.me/vcbmoviez)  
-
+<b>ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴍᴇ</b>
  """
 
     IMDB_TEMPLATE_TXT = """
