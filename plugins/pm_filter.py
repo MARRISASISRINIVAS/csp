@@ -920,7 +920,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
                     InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton('Pattern and anomaly detection ', url=f"https://t.me/{SUPPORT_CHAT}")
+                   
                 ],[
                     InlineKeyboardButton('Pattern and anomaly detection', callback_data='help'),
                     InlineKeyboardButton('Back', callback_data='yearcse')
@@ -948,6 +948,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Unit 5', callback_data="owner_info"),
                     InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORT_CHAT}")
                
+                ],[
+                    
+                    InlineKeyboardButton('Back', callback_data='3cse')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
