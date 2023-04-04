@@ -911,18 +911,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "3cse":
         buttons = [[
-                    InlineKeyboardButton('Natural language processing', callback_data="deeplearning"),
-                    InlineKeyboardButton('Computer networks ', callback_data="deeplearning")
+                    InlineKeyboardButton('Natural language processing', callback_data="dl"),
+                    InlineKeyboardButton('Computer networks ', callback_data="dl")
                 ],[
-                    InlineKeyboardButton('Formal language automata', callback_data='deeplearning'),
-                    InlineKeyboardButton('Robotics', callback_data='deeplearning')
+                    InlineKeyboardButton('Formal language automata', callback_data='dl'),
+                    InlineKeyboardButton('Robotics', callback_data='dl')
                 ],
             [
-                    InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
-                    InlineKeyboardButton('Complier design', callback_data='deeplearning')
+                    InlineKeyboardButton('Deep learnig', callback_data="dl"),
+                    InlineKeyboardButton('Complier design', callback_data='dl')
                    
                 ],[
-                    InlineKeyboardButton('Pattern and anomaly detection', callback_data='deeplearning'),
+                    InlineKeyboardButton('Pattern and anomaly detection', callback_data='dl'),
                     InlineKeyboardButton('Back', callback_data='yearcse')
                 ]]
         await client.edit_message_media(
@@ -937,7 +937,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         
-    elif query.data == "deeplearning":
+    elif query.data == "dl":
         buttons = [[
                     InlineKeyboardButton('Unit 1', callback_data="dlu1"),
                     InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORTCHAT}")
