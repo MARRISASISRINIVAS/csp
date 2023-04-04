@@ -839,16 +839,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('CSE', callback_data='yearcse'),
+                    InlineKeyboardButton('EEE', callback_data='yearcse'),
+                    InlineKeyboardButton('ECE', callback_data='yearcse')
                 ],[
-                    InlineKeyboardButton('cse', callback_data='yearcse'),
-                    InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('CIVIL', callback_data='yearcse'),
+                    InlineKeyboardButton('Mechanical', callback_data='yearcse'),
+                    InlineKeyboardButton('Food Technology', callback_data='yearcse')
+                    
                 ],[
-                    InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
-                    InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
-                ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
-                  ]]
+                    InlineKeyboardButton('Biotechnology', callback_data='yearcse'),
+                    InlineKeyboardButton('Information Technology', callback_data='yearcse'),
+                    InlineKeyboardButton('B.Arch', callback_data='yearcse')
+                ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -886,12 +889,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "yearcse":
         buttons = [[
-                    InlineKeyboardButton('1', callback_data="owner_info"),
-                    InlineKeyboardButton('2', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('1', callback_data="1cse"),
+                    InlineKeyboardButton('2', callback_data="2cse")
                 ],[
                     InlineKeyboardButton('3', callback_data='3cse'),
-                    InlineKeyboardButton('4', callback_data='about')
-                ]]
+                    InlineKeyboardButton('4', callback_data='4cse')
+                ],[
+                    InlineKeyboardButton('Back', callback_data='start')
+        ]]
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -911,10 +916,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('Formal language automata', callback_data='help'),
                     InlineKeyboardButton('Robotics', callback_data='about')
-                ],[
+                ],
+            [
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
                     InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}"),
                     InlineKeyboardButton('Pattern and anomaly detection ', url=f"https://t.me/{SUPPORT_CHAT}")
+                ],[
+                    InlineKeyboardButton('Pattern and anomaly detection', callback_data='help'),
+                    InlineKeyboardButton('Back', callback_data='yearcse')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
