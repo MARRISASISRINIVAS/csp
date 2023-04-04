@@ -939,13 +939,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "deeplearning":
         buttons = [[
-                    InlineKeyboardButton('Unit 1', callback_data="deeplearning"),
+                    InlineKeyboardButton('Unit 1', callback_data="dlu1"),
                     InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORTCHAT}")
                 ],[
-                    InlineKeyboardButton('Unit 3', callback_data='deeplearning'),
-                    InlineKeyboardButton('Unit 4', callback_data='deeplearning')
+                    InlineKeyboardButton('Unit 3', callback_data='dlu3'),
+                    InlineKeyboardButton('Unit 4', callback_data='dlu4')
                 ],[
-                    InlineKeyboardButton('Unit 5', callback_data="deeplearning"),
+                    InlineKeyboardButton('Unit 5', callback_data="dlu5"),
                     InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORTCHAT}")
                
                 ],[
