@@ -919,7 +919,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
             [
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
-                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}"),
+                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}")
                    
                 ],[
                     InlineKeyboardButton('Pattern and anomaly detection', callback_data='help'),
