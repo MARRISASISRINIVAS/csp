@@ -518,8 +518,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         chat_id=query.from_user.id,
                         file_id=file_id,
                         caption=f_caption,
-                        protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ BOT UPDATES ⚔️', url="https://t.me/VCBMOVIEZ") ] ] ))
+                        protect_content=True if ident == "filep" else False,)
                 else:
                     await query.answer(f"𝖧𝖾𝗒 {query.from_user.first_name}, 𝖳𝗁𝗂𝗌 𝗂𝗌 𝗇𝗈𝗍 𝗒𝗈𝗎𝗋 𝗋𝖾𝗊𝗎𝖾𝗌𝗍 !", show_alert=True)
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -940,13 +939,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "dl":
         buttons = [[
                     InlineKeyboardButton('Unit 1', callback_data="dlu1"),
-                    InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORTCHAT}")
+                    InlineKeyboardButton('Unit 2', callback_data="dlu1")
                 ],[
                     InlineKeyboardButton('Unit 3', callback_data='dlu3'),
                     InlineKeyboardButton('Unit 4', callback_data='dlu4')
                 ],[
                     InlineKeyboardButton('Unit 5', callback_data="dlu5"),
-                    InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORTCHAT}")
+                    InlineKeyboardButton('Previous Quation Papers ', callback_data="dlu1")
                
                 ],[
                     
