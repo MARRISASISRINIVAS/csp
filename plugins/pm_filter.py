@@ -890,7 +890,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('2', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('3', callback_data='3cse'),
-                    InlineKeyboardButton('4', callback_data='about'),
+                    InlineKeyboardButton('4', callback_data='about')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -910,10 +910,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Computer networks ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('Formal language automata', callback_data='help'),
-                    InlineKeyboardButton('Robotics', callback_data='about'),
+                    InlineKeyboardButton('Robotics', callback_data='about')
                 ],[
                     InlineKeyboardButton('Deep learnig', callback_data="deeplearning"),
-                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Complier design', url=f"https://t.me/{SUPPORT_CHAT}"),
                     InlineKeyboardButton('Pattern and anomaly detection ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ]]
         await client.edit_message_media(
@@ -934,7 +934,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Unit 2', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('Unit 3', callback_data='help'),
-                    InlineKeyboardButton('Unit 4', callback_data='about'),
+                    InlineKeyboardButton('Unit 4', callback_data='about')
                 ],[
                     InlineKeyboardButton('Unit 5', callback_data="owner_info"),
                     InlineKeyboardButton('Previous Quation Papers ', url=f"https://t.me/{SUPPORT_CHAT}")
