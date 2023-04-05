@@ -358,7 +358,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+        return await query.answer('Thanks For Using Me')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -379,7 +379,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Disconnected from', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+        return await query.answer('Thanks For Using Me')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -402,7 +402,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+        return await query.answer('Thanks For Using Me')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -420,7 +420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+        return await query.answer('Thanks For Using Me')
     elif query.data == "backcb":
         await query.answer()
 
@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+            return await query.answer('Thanks For Using Me')
         buttons = []
         for groupid in groupids:
             try:
@@ -951,7 +951,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+            return await query.answer('Thanks For Using Me')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -1016,7 +1016,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
+    await query.answer('Thanks For Using Me')
 
     
 async def auto_filter(client, msg, spoll=False):
