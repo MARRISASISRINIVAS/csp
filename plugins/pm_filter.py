@@ -886,7 +886,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Dear Life', callback_data='DearLife'),
                     InlineKeyboardButton('The Lottery', callback_data='TheLottery')
                 ],[
-                    InlineKeyboardButton('BACK', callback_data='START')
+                    InlineKeyboardButton('BACK', callback_data='start')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
