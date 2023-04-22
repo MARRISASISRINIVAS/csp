@@ -22,20 +22,20 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('Mystery', callback_data='Mystery'),
-                    InlineKeyboardButton('Horror', callback_data='Horror')
+                    InlineKeyboardButton('Mystery', callback_data='mystery'),
+                    InlineKeyboardButton('Horror', callback_data='horror')
                 ],[
-                    InlineKeyboardButton('Thriller & Suspense', callback_data='ThrillerSuspense'),
-                    InlineKeyboardButton('Romance', callback_data='Romance')
+                    InlineKeyboardButton('Thriller & Suspense', callback_data='thrillersuspense'),
+                    InlineKeyboardButton('Romance', callback_data='romance')
                 ],[
-                    InlineKeyboardButton('Short Story', callback_data='ShortStory'),
-                    InlineKeyboardButton('Biography', callback_data='Biography')
+                    InlineKeyboardButton('Short Story', callback_data='shortstory'),
+                    InlineKeyboardButton('Biography', callback_data='biography')
                 ],[
-                    InlineKeyboardButton('Self-help', callback_data='Selfhelp'),
-                    InlineKeyboardButton('History', callback_data='History')
+                    InlineKeyboardButton('Self-help', callback_data='selfhelp'),
+                    InlineKeyboardButton('History', callback_data='history')
                 ],[
-                    InlineKeyboardButton('Travel', callback_data='Travel'),
-                    InlineKeyboardButton('True Crime', callback_data='TrueCrime')
+                    InlineKeyboardButton('Travel', callback_data='travel'),
+                    InlineKeyboardButton('True Crime', callback_data='truecrime')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -49,21 +49,24 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons =[[
-                    InlineKeyboardButton('Mystery', callback_data='Mystery'),
-                    InlineKeyboardButton('Horror', callback_data='Horror')
+        buttons =elif query.data == "mystery":
+        buttons = [[
+                    InlineKeyboardButton('Gone Girl', callback_data="gonegirl"),
+                    InlineKeyboardButton('The Silent Patient', callback_data="thesilentpatient")
                 ],[
-                    InlineKeyboardButton('Thriller & Suspense', callback_data='ThrillerSuspense'),
-                    InlineKeyboardButton('Romance', callback_data='Romance')
+                    InlineKeyboardButton('In the Woods', callback_data='intheWoods'),
+                    InlineKeyboardButton('The Girl with the Dragon Tattoo', callback_data='thegirlwiththedragontattoo')
                 ],[
-                    InlineKeyboardButton('Short Story', callback_data='ShortStory'),
-                    InlineKeyboardButton('Biography', callback_data='Biography')
+                    InlineKeyboardButton('The Guest List', callback_data='theguestList'),
+                    InlineKeyboardButton('A Good Girls Guide to Murder', callback_data='agoodgirlsguidetomurder')
                 ],[
-                    InlineKeyboardButton('Self-help', callback_data='Selfhelp'),
-                    InlineKeyboardButton('History', callback_data='History')
+                    InlineKeyboardButton('Rebecca', callback_data='rebecca'),
+                    InlineKeyboardButton('The Woman in White ', callback_data='thewomaninwhite ')
                 ],[
-                    InlineKeyboardButton('Travel', callback_data='Travel'),
-                    InlineKeyboardButton('True Crime', callback_data='TrueCrime')
+                    InlineKeyboardButton('Dear Life', callback_data='dearlife'),
+                    InlineKeyboardButton('The Lottery', callback_data='thelottery')
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='start')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -103,20 +106,20 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =[[
-                    InlineKeyboardButton('Mystery', callback_data='Mystery'),
-                    InlineKeyboardButton('Horror', callback_data='Horror')
+                    InlineKeyboardButton('Mystery', callback_data='mystery'),
+                    InlineKeyboardButton('Horror', callback_data='horror')
                 ],[
-                    InlineKeyboardButton('Thriller & Suspense', callback_data='ThrillerSuspense'),
-                    InlineKeyboardButton('Romance', callback_data='Romance')
+                    InlineKeyboardButton('Thriller & Suspense', callback_data='thrillersuspense'),
+                    InlineKeyboardButton('Romance', callback_data='romance')
                 ],[
-                    InlineKeyboardButton('Short Story', callback_data='ShortStory'),
-                    InlineKeyboardButton('Biography', callback_data='Biography')
+                    InlineKeyboardButton('Short Story', callback_data='shortstory'),
+                    InlineKeyboardButton('Biography', callback_data='biography')
                 ],[
-                    InlineKeyboardButton('Self-help', callback_data='Selfhelp'),
-                    InlineKeyboardButton('History', callback_data='History')
+                    InlineKeyboardButton('Self-help', callback_data='selfhelp'),
+                    InlineKeyboardButton('History', callback_data='history')
                 ],[
-                    InlineKeyboardButton('Travel', callback_data='Travel'),
-                    InlineKeyboardButton('True Crime', callback_data='TrueCrime')
+                    InlineKeyboardButton('Travel', callback_data='travel'),
+                    InlineKeyboardButton('True Crime', callback_data='truecrime')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
