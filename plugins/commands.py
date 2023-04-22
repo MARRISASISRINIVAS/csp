@@ -51,22 +51,20 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons =elif query.data == "mystery":
         buttons = [[
-                    InlineKeyboardButton('Gone Girl', callback_data="gonegirl"),
-                    InlineKeyboardButton('The Silent Patient', callback_data="thesilentpatient")
+                    InlineKeyboardButton('Mystery', callback_data='mystery'),
+                    InlineKeyboardButton('Horror', callback_data='horror')
                 ],[
-                    InlineKeyboardButton('In the Woods', callback_data='intheWoods'),
-                    InlineKeyboardButton('The Girl with the Dragon Tattoo', callback_data='thegirlwiththedragontattoo')
+                    InlineKeyboardButton('Thriller & Suspense', callback_data='thrillersuspense'),
+                    InlineKeyboardButton('Romance', callback_data='romance')
                 ],[
-                    InlineKeyboardButton('The Guest List', callback_data='theguestList'),
-                    InlineKeyboardButton('A Good Girls Guide to Murder', callback_data='agoodgirlsguidetomurder')
+                    InlineKeyboardButton('Short Story', callback_data='shortstory'),
+                    InlineKeyboardButton('Biography', callback_data='biography')
                 ],[
-                    InlineKeyboardButton('Rebecca', callback_data='rebecca'),
-                    InlineKeyboardButton('The Woman in White ', callback_data='thewomaninwhite ')
+                    InlineKeyboardButton('Self-help', callback_data='selfhelp'),
+                    InlineKeyboardButton('History', callback_data='history')
                 ],[
-                    InlineKeyboardButton('Dear Life', callback_data='dearlife'),
-                    InlineKeyboardButton('The Lottery', callback_data='thelottery')
-                ],[
-                    InlineKeyboardButton('BACK', callback_data='start')
+                    InlineKeyboardButton('Travel', callback_data='travel'),
+                    InlineKeyboardButton('True Crime', callback_data='truecrime')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
