@@ -866,10 +866,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Thanks For Using Me')
+        
+        
+    elif query.data == "mystery":
+        buttons = [[
+                    InlineKeyboardButton('Search Books', switch_inline_query_current_chat='mystery'),
+                ],[
+                    InlineKeyboardButton('Some Famous Books', callback_data='mysteryb')
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YEAR_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
     
         
-    elif query.data == "mystery":
+    elif query.data == "mysteryb":
         buttons = [[
                     InlineKeyboardButton('Gone Girl', callback_data="gonegirl"),
                     InlineKeyboardButton('The Silent Patient', callback_data="thesilentpatient")
@@ -886,7 +907,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Dear Life', callback_data='dearlife'),
                     InlineKeyboardButton('The Lottery', callback_data='thelottery')
                 ],[
-                    InlineKeyboardButton('BACK', callback_data='start')
+                    InlineKeyboardButton('BACK', callback_data='mystery'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -900,10 +922,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     elif query.data == "gonegirl":
         buttons = [[
                     InlineKeyboardButton('FIND BOOK LOCATION', callback_data="gonegirll")
                    
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -912,12 +949,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.COURSE_TXT,
+            text=script.GONEGIRLB_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
        
         
+    elif query.data == "gonegirll":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GONEGIRLL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
         
         
         
@@ -929,7 +982,422 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         
         
-    elif query.data == "dl":
+        
+    elif query.data == "thesilentpatient":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="thesilentpatientl")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THESILENTPATIENTB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        elif query.data == "thesilentpatientl":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THESILENTPATIENTL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "intheWoods":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="intheWoodsl")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.INTHEWOODSB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+        elif query.data == "intheWoodsl":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.INTHEWOODSL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "thegirlwiththedragontattoo":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="thegirlwiththedragontattool")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEGIRLWITHTHEDRAGONTATTOOB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "thegirlwiththedragontattool":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEGIRLWITHTHEDRAGONTATTOOL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "theguestList":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="theguestListl")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEGUESTLISTB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "theguestListl":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEGUESTLISTL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        elif query.data == "agoodgirlsguidetomurder":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="agoodgirlsguidetomurderl")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.AGOODGIRLSGUIDETOMURDERB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "agoodgirlsguidetomurderl":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.AGOODGIRLSGUIDETOMURDERL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "rebecca":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="rebeccal")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.REBECCAB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "rebeccal":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.REBECCAL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "thewomaninwhite":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="thewomaninwhitel")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEWOMANINWHITEB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "thewomaninwhitel":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THEWOMANINWHITEL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        elif query.data == "dearlife":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="dearlifel")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DEARLIFEB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "dearlifel":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DEARLIFEL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "thelottery":
+        buttons = [[
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="thelotteryl")
+                   
+                ],[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THELOTTERYB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+       
+        
+    elif query.data == "thelotteryl":
+        buttons = [[
+                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('Main Menu', callback_data='start')
+                ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.THELOTTERYL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        elif query.data == "dl":
         buttons = [[
                     InlineKeyboardButton('Unit 1', callback_data="dlu1"),
                     InlineKeyboardButton('Unit 2', callback_data="dlu1")
