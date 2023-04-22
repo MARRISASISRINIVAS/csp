@@ -851,7 +851,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('History', callback_data='history')
                 ],[
                     InlineKeyboardButton('Travel', callback_data='travel'),
-                    InlineKeyboardButton('True Crime', callback_data='trueCrime')
+                    InlineKeyboardButton('True Crime', callback_data='truecrime')
                 ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -869,19 +869,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     
         
-    elif query.data == "Mystery":
+    elif query.data == "mystery":
         buttons = [[
                     InlineKeyboardButton('Gone Girl', callback_data="gonegirl"),
                     InlineKeyboardButton('The Silent Patient', callback_data="thesilentpatient")
                 ],[
-                    InlineKeyboardButton('In the Woods', callback_data='IntheWoods'),
+                    InlineKeyboardButton('In the Woods', callback_data='intheWoods'),
                     InlineKeyboardButton('The Girl with the Dragon Tattoo', callback_data='thegirlwiththedragontattoo')
                 ],[
-                    InlineKeyboardButton('The Guest List', callback_data='TheGuestList'),
-                    InlineKeyboardButton('A Good Girls Guide to Murder', callback_data='aGoodGirlsguidetomurder')
+                    InlineKeyboardButton('The Guest List', callback_data='theguestList'),
+                    InlineKeyboardButton('A Good Girls Guide to Murder', callback_data='agoodgirlsguidetomurder')
                 ],[
                     InlineKeyboardButton('Rebecca', callback_data='rebecca'),
-                    InlineKeyboardButton('The Woman in White ', callback_data='theWomaninwhite ')
+                    InlineKeyboardButton('The Woman in White ', callback_data='thewomaninwhite ')
                 ],[
                     InlineKeyboardButton('Dear Life', callback_data='dearlife'),
                     InlineKeyboardButton('The Lottery', callback_data='thelottery')
@@ -900,9 +900,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         
-    elif query.data == "GoneGirl":
+    elif query.data == "gonegirl":
         buttons = [[
-                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="gonegirlL")
+                    InlineKeyboardButton('FIND BOOK LOCATION', callback_data="gonegirll")
                    
                 ]]
         await client.edit_message_media(
