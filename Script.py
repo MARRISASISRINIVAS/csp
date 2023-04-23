@@ -15,54 +15,82 @@ class script(object):
     PUBLISHED YEAR :24 May 2012
     MAIN THEME OF BOOK :Gone Girl is a dark, psychologically challenging mystery with themes surrounding identity and personality formation, dysfunctional coping skills, and authenticity vs role playing."""
     GONEGIRLL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    1st FLOOR RIGHTSIDE 3rdRACK RIGHTSIDE 2ndROW"""
+    →1stFLOOR 
+    →RIGHTSIDE 
+    →3rdCLOUMN 
+    →RIGHTSIDE 
+    →2ndROW"""
     
     
     
     THESILENTPATIENTB_TXT="""AUTHOR : Alex Michaelides
-    PUBLISHED YEAR :5 February 2019
+    PUBLISHED YEAR :5February2019
     MAIN THEME OF BOOK :Empathy, Identification, and Boundaries. Over and over again in Alex Michaelides's thriller The Silent Patient, Theo Faber—the book's first-person narrator and a trainee psychotherapist—insists that the goal of his job is to feel his patients' pain for them."""
     THESILENTPATIENTL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    1st FLOOR RIGHTSIDE 2ndRACK LEFTSIDE 2ndROW"""
+    →1stFLOOR 
+    →RIGHTSIDE 
+    →2ndCOLUMN 
+    →LEFTSIDE 
+    →2ndROW"""
     
     
     
     INTHEWOODSB_TXT="""AUTHOR : Tana French
-    PUBLISHED YEAR :June 2007
+    PUBLISHED YEAR :June2007
     MAIN THEME OF BOOK :Between the varied characters found in the story, common themes of life, love and loss emerged. Fidelity and revenge are additionally explored, particularly in the show's second act."""
     INTHEWOODSL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    0th FLOOR RIGHTSIDE 3rdRACK RIGHTSIDE 4thROW"""
+    →0thFLOOR 
+    →RIGHTSIDE 
+    →3rdCOLUMN 
+    →RIGHTSIDE 
+    →4thROW"""
     
     
     THEGIRLWITHTHEDRAGONTATTOOB_TXT="""AUTHOR : Stieg Larsson
-    PUBLISHED YEAR :August 2005
+    PUBLISHED YEAR :August2005
     MAIN THEME OF BOOK :On the surface, The Girl With The Dragon Tattoo is a simple mystery thriller, but on a deeper level, the book is an examination of the violent abuse of women in Sweden, focusing particularly on the warped philosophies and governmental failures that permit such acts."""
     THEGIRLWITHTHEDRAGONTATTOOL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    1st FLOOR RIGHTSIDE 2ndRACK LEFTSIDE 4thROW"""
+    →1stFLOOR 
+    →RIGHTSIDE 
+    →2ndCOLUMN 
+    →LEFTSIDE 
+    →4thROW"""
     
     
     THEGUESTLISTB_TXT="""AUTHOR : Lucy Foley
-    PUBLISHED YEAR :20 February 2020
+    PUBLISHED YEAR :20February2020
     MAIN THEME OF BOOK :“The Guest List” is a psychological thriller, with the theme being a wedding and the days leading up to it. It should be about celebrating a joyous day, but is instead filled with suspense and gloom on a remote island off the coast of Ireland. The reader knows something is afoot, and that something is murder."""
     THEGUESTLISTL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    0th FLOOR RIGHTSIDE 3rdRACK LEFTSIDE 3rdROW"""
+    →0thFLOOR 
+    →RIGHTSIDE 
+    →3rdCLOUMN 
+    →LEFTSIDE 
+    →3rdROW"""
     
     
     
     AGOODGIRLSGUIDETOMURDERB_TXT="""AUTHOR : Holly Jackson
-    PUBLISHED YEAR :2 May 2019
+    PUBLISHED YEAR :2May2019
     MAIN THEME OF BOOK :A Good Girl's Guide to Murder is a mystery book full of plot twists and red herrings with themes of family, courage and perseverance. The story is told through the eyes of Pippa, a teenager with a mind that takes an intriguing perspective on life."""
     AGOODGIRLSGUIDETOMURDERL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    1st FLOOR LEFTSIDE 1stRACK RIGHTSIDE 2ndROW"""
+    →1stFLOOR 
+    →LEFTSIDE 
+    →1stCOLUMN 
+    →RIGHTSIDE 
+    →2ndROW"""
     
     
     
     
     REBECCAB_TXT="""AUTHOR : Daphne du Maurier
-    PUBLISHED YEAR :August 1938
+    PUBLISHED YEAR :August1938
     MAIN THEME OF BOOK :In Rebecca, du Maurier addresses the theme of imprisonment in many ways. From a feminist standpoint, for example, it's easy to see that the narrator is imprisoned by the gender roles of her time."""
     REBECCAL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    0th FLOOR RIGHTSIDE 3rdRACK leftside 1stROW"""
+    →0thFLOOR 
+    →RIGHTSIDE 
+    →3rdCOLUMN 
+    →leftside 
+    →1stROW"""
     
     
     
@@ -70,7 +98,11 @@ class script(object):
     PUBLISHED YEAR :1859 - 1860 published in serial form
     MAIN THEME OF BOOK :Identity and external appearance are presented as fluid and deceptive in The Woman in White, which centers around a mysterious and deadly case of switched identities. In the novel, identity is closely bound up with public recognition, to the point where loss of public identity is equated with a total loss of self."""
     THEWOMANINWHITEL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    1st FLOOR RIGHTSIDE 5thRACK RIGHTSIDE 5thROW"""
+    →1stFLOOR
+    →RIGHTSIDE 
+    →5thCOLUMN 
+    →RIGHTSIDE 
+    →5thROW"""
     
     
     
@@ -80,20 +112,24 @@ class script(object):
     MAIN THEME OF BOOK :Alice Munro's Dear Life
 The central theme of the stories as a whole focuses on the lives of women, the ways in which they live and think, and how they challenge the expectations of family, friends, and society. The stories also offer a look into themes such as betrayal, abandonment, and vulnerability."""
     DEARLIFEL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    2ND FLOOR RIGHTSIDE 3rdRACK RIGHTSIDE 2ndROW"""
+    →2NDFLOOR 
+    →RIGHTSIDE 
+    →3rdCOLUMN 
+    →RIGHTSIDE 
+    →2ndROW"""
     
     
     
     
     THELOTTERYB_TXT="""AUTHOR : Shirley Jackson
-    PUBLISHED YEAR :26 June 1948
+    PUBLISHED YEAR :26June1948
     MAIN THEME OF BOOK :''The Lottery'' is the power of tradition and ritual. The tradition of the lottery is continued every year even though the original meaning behind the event has long been lost. The lottery has been held for so long that the only information about its purpose comes from hearsay."""
     THELOTTERYL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    2nd FLOOR 
-    RIGHTSIDE 
-    4thCOLUMN 
-    LEFTSIDE 
-    1stROW"""
+    →2ndFLOOR 
+    →RIGHTSIDE 
+    →4thCOLUMN 
+    →LEFTSIDE 
+    →1stROW"""
     
     
     
