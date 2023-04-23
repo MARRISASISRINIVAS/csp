@@ -870,7 +870,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "mystery":
         buttons = [[
-                    InlineKeyboardButton('Search Books', switch_inline_query_current_chat='mystery'),
+                    InlineKeyboardButton('Search Books', switch_inline_query_current_chat='mystery')
                 ],[
                     InlineKeyboardButton('Some Famous Books', callback_data='mysteryb')
                 ],[
