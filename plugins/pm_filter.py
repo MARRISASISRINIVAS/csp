@@ -1048,7 +1048,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-     elif query.data == "intheWoodsl":
+    elif query.data == "intheWoodsl":
         buttons = [[
                     InlineKeyboardButton('BACK', callback_data='mysteryb'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
