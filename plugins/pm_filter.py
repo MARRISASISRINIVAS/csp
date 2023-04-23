@@ -957,7 +957,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "gonegirll":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='gonegirl'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1004,7 +1004,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "thesilentpatientl":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='thesilentpatient'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1050,7 +1050,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "intheWoodsl":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='intheWoods'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1101,7 +1101,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "thegirlwiththedragontattool":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='thegirlwiththedragontattoo'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1149,7 +1149,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "theguestListl":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='theguestList'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1192,7 +1192,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "agoodgirlsguidetomurderl":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='agoodgirlsguidetomurder'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1238,7 +1238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "rebeccal":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='rebecca'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1282,7 +1282,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "thewomaninwhitel":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='thewomaninwhite'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1324,7 +1324,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "dearlifel":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='dearlife'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
@@ -1369,7 +1369,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "thelotteryl":
         buttons = [[
-                    InlineKeyboardButton('BACK', callback_data='mysteryb'),
+                    InlineKeyboardButton('BACK', callback_data='thelottery'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
                 ]]
         await client.edit_message_media(
