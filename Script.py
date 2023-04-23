@@ -85,11 +85,15 @@ The central theme of the stories as a whole focuses on the lives of women, the w
     
     
     
-    THELOTTERYB_TXT="""AUTHOR : Shirley Jackson 
+    THELOTTERYB_TXT="""AUTHOR : Shirley Jackson
     PUBLISHED YEAR :26 June 1948
     MAIN THEME OF BOOK :''The Lottery'' is the power of tradition and ritual. The tradition of the lottery is continued every year even though the original meaning behind the event has long been lost. The lottery has been held for so long that the only information about its purpose comes from hearsay."""
     THELOTTERYL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
-    2nd FLOOR RIGHTSIDE 4thRACK LEFTSIDE 1stROW"""
+    2nd FLOOR 
+    RIGHTSIDE 
+    4thCOLUMN 
+    LEFTSIDE 
+    1stROW"""
     
     
     
