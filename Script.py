@@ -1,12 +1,21 @@
 class script(object):
 
-    START_TXT = """ ʜɪ 👋
-ᴛʜɪs ʙᴏᴛ ᴜɴ ᴏғғɪᴄɪᴀʟ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴛʜᴇ sᴛᴜᴅᴇɴᴛs ᴏғ ᴋᴀʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛʙᴏᴏᴋs ᴀɴᴅ ᴘʀᴇᴠɪᴏᴜs ǫᴜᴀᴛɪᴏɴ ᴘᴀᴘᴇʀs
-ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʙʀᴀɴᴄʜ 👇 """
+    START_TXT = """HI👋👋 
+    WELCOME TO THE CENTRAL LIBRARY MADE BY THE KALASALINGAM UNIVERSITY STUDENTS TO PROVIDE THE BOOKS
+    SELECT THE TYPE OF CATAGEORY OF BOOKS YOU WANT 👇"""
     YEAR_TXT = """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʏᴇᴀʀ 👇 """
     COURSE_TXT = """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴄᴏᴜʀsᴇ 👇"""
     BRANCH_TXT= """ ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ʙʀᴀɴᴄʜ  👇"""
     
+    
+    SEARCH_TXT="""PLEASE SELECT OPTION FROM BELOW 👇"""
+    
+    BOOKS_TXT="""PLEASE SELECT BOOK FROM BELOW 👇"""
+    GONEGIRLB_TXT="""AUOTHER : Gillian Flynn
+    PUBLISHED YEAR :June 2012
+    MAIN THEME OF BOOK :Gone Girl is a dark, psychologically challenging mystery with themes surrounding identity and personality formation, dysfunctional coping skills, and authenticity vs role playing."""
+    GONEGIRLL_TXT=""" BOOK IS AVAILABLE IN THIS LOCATION
+    1st FLOOR RIGHTSIDE 3rdRACK 2ndROW"""
     
     STAT_TXT = """Hilo {} 💖
 
