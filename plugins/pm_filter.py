@@ -1002,8 +1002,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-       
-        elif query.data == "thesilentpatientl":
+    elif query.data == "thesilentpatientl":
         buttons = [[
                     InlineKeyboardButton('BACK', callback_data='mysteryb'),
                     InlineKeyboardButton('Main Menu', callback_data='start')
